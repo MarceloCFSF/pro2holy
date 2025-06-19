@@ -14,10 +14,14 @@ dependencies = [
 
 [tool.poetry]
 name = "pro2holy"
+version = "0.1.0"
 packages = [{ include = "pro2holy", from = "src" }]
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.4.1"
+
+[tool.poetry.scripts]
+pro2holy = "pro2holy.main:main"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
