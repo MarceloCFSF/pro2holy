@@ -7,10 +7,6 @@ def converter(input_file: str, output_folder: str):
     input_path = Path(input_file)
     filename = input_path.stem
 
-    output_path = Path(output_folder)
-
-    # assert output_path.is_dir(), "O caminho de saída não é um diretório"
-
     with open(input_file, "r", encoding="utf-8") as file:
         soup = BeautifulSoup(file, "xml")
 

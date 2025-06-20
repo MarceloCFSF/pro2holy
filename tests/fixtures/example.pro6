@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RVPresentationDocument version="6.0" uuid="11111111-1111-1111-1111-111111111111">
+  <RVDisplayName>Test Song</RVDisplayName>
+  <RVSlides>
+    <RVSlide UUID="slide-1" displayName="Verse 1" sort_index="0">
+      <RVTextBuild>
+        <NSString rvXMLIvarName="PlainText">U2hpbmUgeW91ciBsaWdodCB1cG9uIG15IHdheQ0KU3RhbmQgd2l0aCBtZSB0aHJvdWdoIHRoZSBuaWdodA==</NSString>
+      </RVTextBuild>
+    </RVSlide>
+    <RVSlide UUID="slide-2" displayName="Chorus" sort_index="1">
+      <RVTextBuild>
+        <NSString rvXMLIvarName="PlainText">SSB3aWxsIHJpc2UgYW5kIHNpbmcgYWxvdWQNCkxldCBldmVyeW9uZSBoZWFyIG15IHNvdW5k</NSString>
+      </RVTextBuild>
+    </RVSlide>
+    <RVSlide UUID="slide-3" displayName="Bridge" sort_index="2">
+      <RVTextBuild>
+        <NSString rvXMLIvarName="PlainText">WW91IGFyZSBteSBzdHJlbmd0aCBhbmQgbXkgc2hlbHRlcg0KVGhpcyBsb3ZlIHdpbGwgbmV2ZXIgZmFkZQ==</NSString>
+      </RVTextBuild>
+    </RVSlide>
+  </RVSlides>
+</RVPresentationDocument>

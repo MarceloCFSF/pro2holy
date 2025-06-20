@@ -9,9 +9,9 @@ def read_file(path: str) -> str:
 
 def test_converter():
     base_dir = os.path.dirname(__file__)
-    propresenter = os.path.join(base_dir, "fixtures", "ARDE OUTRA VEZ.pro6")
+    propresenter = os.path.join(base_dir, "fixtures", "example.pro6")
     expected_file = os.path.join(base_dir, "fixtures", "expected.txt")
-    output_file = os.path.join(base_dir, "ARDE OUTRA VEZ.txt")
+    output_file = os.path.join(base_dir, "example.txt")
 
     try:
         converter(propresenter, base_dir)
