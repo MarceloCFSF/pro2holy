@@ -8,7 +8,6 @@ A command-line tool to convert `.pro6` song files from ProPresenter 6 to Holyric
 
 - Parses `.pro6` XML files
 - Decodes base64 song text
-- Handles multiple slides with line breaks (`\r`)
 - Outputs clean `.txt` format ready for Holyrics
 - CLI usage via Poetry
 
@@ -22,17 +21,20 @@ A command-line tool to convert `.pro6` song files from ProPresenter 6 to Holyric
 poetry run pro2holy path/to/input.pro6 path/to/output_dir
 ```
 
-### Example
+- If <input> is a `.pro6` file: it converts that file only.
+
+- If <input> is a directory: it converts all `.pro6` files in that folder to `.txt`.
+
+### Example: convert a single file
 
 ```bash
 poetry run pro2holy tests/fixtures/example.pro6 output/
 ```
 
-The result will be a .txt file like:
+## Example: convert all `.pro6` files in a folder
 
 ```bash
-
-output/example.txt
+poetry run pro2holy tests/fixtures/ output/
 ```
 
 ---
@@ -74,5 +76,5 @@ poetry run pytest
 
 This tool is intended for personal use only.
 
-Do not upload copyrighted .pro6 files or song lyrics to a public repository.
+Do not upload copyrighted `.pro6` files or song lyrics to a public repository.
 Always verify usage permissions before sharing converted files.
