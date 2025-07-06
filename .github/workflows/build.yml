@@ -1,0 +1,32 @@
+name: Build Windows Executable
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install poetry
+          poetry install
+          pip install pyinstaller
+
+      - name: Build executable
+        run: |
+          pyinstaller src/pro2holy/main.py --onefile --name pro2holy
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: pro2holy-exe
+          path: dist/pro2holy.exe
