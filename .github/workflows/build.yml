@@ -26,7 +26,7 @@ jobs:
           pyinstaller src/pro2holy/main.py --onefile --name pro2holy
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: pro2holy-exe
           path: dist/pro2holy.exe

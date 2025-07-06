@@ -15,15 +15,15 @@ A command-line tool to convert `.pro6` song files from ProPresenter 6 to Holyric
 
 ## 🚀 Usage
 
-### Run directly with Poetry:
+### Run directly with Poetry
 
 ```bash
 poetry run pro2holy path/to/input.pro6 path/to/output_dir
 ```
 
-- If <input> is a `.pro6` file: it converts that file only.
+- If `<input>` is a `.pro6` file: it converts that file only.
 
-- If <input> is a directory: it converts all `.pro6` files in that folder to `.txt`.
+- if `<input>` is a directory: it converts all `.pro6` files in that folder to `.txt`.
 
 ### Example: convert a single file
 
